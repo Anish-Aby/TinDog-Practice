@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+}
+
+/* #57429D; */
+
+.menu-icon{
+    position: fixed;
+    top: 0;
+    right: 1vh;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.container.top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    /* gap: 5vh; */
+    /* margin-top: 10vh; */
+    min-height: 200vh;
+    min-width: 100%;
+}
+
+.brand-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #57429D;
+}
+
+.card-container.card-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content:center; */
+    gap: 1vh;
+    min-width: 80%;
+    min-height: 70vh;
+    background-color: #57429D;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 22px 22px 48px #bcbcbc,
+    -22px -22px 48px #ffffff;
+}
+
+.circle-container{
+    display: flex;
+    gap: 3vh;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    min-height: 2vh;
+    margin-bottom: 2vh;
+}
+
+.circle{
+    height: 2vh;
+    width: 2vh;
+    border: 1px solid #efefef;
+    border-radius: 50%;
+}
+
+.header.card-1{
+    font-family: "Montserrat";
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ebebeb;
+    width: 40vh;
+    /* background-color: black; */
+}
+
+.sub-heading{
+    font-family: "Montserrat";
+    font-size: 1rem;
+    padding-top: 3vh;
+    color: #ebebeb;
+    width: 40vh;
+    line-height: 3vh;
+}
+
+.card-container.card-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content:center; */
+    gap: 1vh;
+    min-width: 80%;
+    min-height: 82vh;
+    background-color: #57429D;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 22px 22px 48px #bcbcbc,
+    -22px -22px 48px #ffffff;
+}
+
+.circle-container.card-2{
+    display: flex;
+    gap: 3vh;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    min-height: 2vh;
+    margin-bottom: 2vh;
+}
+
+.header.card-2{
+    font-family: "Montserrat";
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ebebeb;
+    width: 40vh;
+}
+
+.sub-heading.card-2{
+    font-family: "Montserrat";
+    font-size: 1rem;
+    padding-top: 3vh;
+    color: #ebebeb;
+    width: 40vh;
+}
+
+@media (min-width: 768px) {
+
+    .brand-name{
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    .card-container.card-1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+        /* gap: 1vh; */
+        min-width: 80%;
+        min-height: 80vh;
+        background-color: #57429D;
+        border: none;
+        border-radius: 40px;
+    }
+
+    .circle-container{
+        display: flex;
+        gap: 3vh;
+        justify-content: center;
+        flex-direction: row;
+        width: 30%;
+        min-height: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .card-container.card-1 img{
+        width: 90vh;
+    }
+
+    .container-for-pc.img-circle.card-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-for-pc.card-1{
+        min-width: 40%;
+    }
+
+    .header.card-1{
+        font-family: "Montserrat";
+        font-size: 4rem;
+        font-weight: 900;
+        color: #ebebeb;
+        /* width: 100%; */
+    }
+
+    .sub-heading{
+        font-family: "Montserrat";
+        font-size: 1.5rem;
+        line-height: 5vh;
+        /* padding-top: 3vh; */
+        color: #ebebeb;
+        width: 40vh;
+    }
+
+    .card-container.card-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .container-for-pc.img-circle.card-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+    }
+
+    .header.card-2{
+        font-size: 4rem;
+        width: 60vh;
+    }
+
+    .sub-heading.card-2{
+        font-size: 1.5rem;
+        width: 60vh;
+    }
+
+    .container-for-pc.card-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .card-container.card-2 img{
+        width: 60vh;
+    }
+}
